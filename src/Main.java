@@ -13,6 +13,8 @@ public class Main
         double distance;
         String Trash = "";
         boolean done = false;
+        boolean done1 = false;
+        boolean done2 = false
         do
             {
                 System.out.print("Enter gallons of gas in the tank : ");
@@ -35,14 +37,14 @@ public class Main
                 {
                     FuelEfficiency = in.nextDouble();
                     in.nextLine();
-                    done = true;
+                    done1 = true;
                 } else
                 {
                     Trash = in.nextLine();
                     System.out.println("\nYou said Miles per gallon was : " + Trash);
                     System.out.println("Enter a valid number");
                 }
-            } while (!done);
+            } while (!done1);
             do
             {
                 System.out.print("Enter the gas Price : ");
@@ -50,7 +52,7 @@ public class Main
                 {
                     GasPrice = in.nextDouble();
                     in.nextLine();
-                    done = true;
+                    done2 = true;
                 }
                 else
                 {
@@ -58,7 +60,7 @@ public class Main
                     System.out.println("\nYou said price of gas was : " + Trash);
                     System.out.println("Enter a valid number");
                 }
-            } while (!done);
+            } while (!done2);
         Costper100Mile = (100 / FuelEfficiency) * GasPrice;
         distance = GallonsinTank * FuelEfficiency;
         System.out.println("The cost per 100 miles " + Costper100Mile);
