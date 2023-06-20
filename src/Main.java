@@ -14,7 +14,7 @@ public class Main
         String Trash = "";
         boolean done = false;
         boolean done1 = false;
-        boolean done2 = false
+        boolean done2 = false;
         do
             {
                 System.out.print("Enter gallons of gas in the tank : ");
